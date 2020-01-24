@@ -8,7 +8,7 @@ const router = new Router();
 // Em um sistema real, não daria para listar todos cadastros,
 // e ver o perfil(algumas aplicações pode ser que seja viavel)
 
-router.get('/', loginRequired, userController.index); // Lista Usuarios
+router.get('/', userController.index); // Lista Usuarios
 router.get('/:id', userController.show); // Lista Usuario
 
 router.post('/', userController.create);

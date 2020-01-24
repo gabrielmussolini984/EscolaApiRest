@@ -20,6 +20,7 @@ class UserController {
       const usuarios = await User.findAll({ attributes: ['id', 'nome', 'email'] });
       return res.json(usuarios);
     } catch (error) {
+      console.log('erro');
       return res.json(null);
     }
   }
