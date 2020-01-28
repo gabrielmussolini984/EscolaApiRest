@@ -25,7 +25,7 @@ export default class Foto extends Model {
       url: {
         type: Sequelize.VIRTUAL,
         get() {
-          return `${appConfig.url}/${this.getDataValue('filename')}`;
+          return `${appConfig.url}/images/${this.getDataValue('filename')}`;
         },
       },
     }, { sequelize, tableName: 'fotos' });
