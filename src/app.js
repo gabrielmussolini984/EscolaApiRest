@@ -36,7 +36,7 @@ class App {
   }
 
   middleware() {
-    this.app.use(cors());
+    this.app.use(cors(corsOption));
     this.app.use(helmet());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
