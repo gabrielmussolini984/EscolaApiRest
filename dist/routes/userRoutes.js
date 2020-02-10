@@ -8,8 +8,8 @@ const router = new (0, _express.Router)();
 // Em um sistema real, não daria para listar todos cadastros,
 // e ver o perfil(algumas aplicações pode ser que seja viavel)
 
-router.get('/', _UserController2.default.index); // Lista Usuarios
-router.get('/:id', _UserController2.default.show); // Lista Usuario
+// router.get('/', userController.index); // Lista Usuarios
+// router.get('/:id', userController.show); // Lista Usuario
 
 router.post('/', _UserController2.default.create);
 router.put('/', _loginRequired2.default, _UserController2.default.update);
