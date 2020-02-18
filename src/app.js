@@ -16,8 +16,6 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
-  'http://34.95.201.84/',
-  'http://localhost:3003',
   'https://escolareactapp.netlify.com',
 ];
 
