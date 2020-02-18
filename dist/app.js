@@ -1,6 +1,6 @@
 "use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _dotenv = require('dotenv'); var _dotenv2 = _interopRequireDefault(_dotenv);
 var _path = require('path');
-var _expressdelay = require('express-delay'); var _expressdelay2 = _interopRequireDefault(_expressdelay);
+// import delay from 'express-delay';
 
 _dotenv2.default.config();
 
@@ -18,6 +18,7 @@ var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopReq
 const whiteList = [
   'http://34.95.201.84/',
   'http://localhost:3003',
+  'https://escolareactapp.netlify.com/',
 ];
 
 const corsOption = {
@@ -39,7 +40,7 @@ class App {
   middleware() {
     this.app.use(_cors2.default.call(void 0, corsOption));
     this.app.use(_helmet2.default.call(void 0, ));
-    this.app.use(_expressdelay2.default.call(void 0, 2000));
+    // this.app.use(delay(2000));
     this.app.use(_express2.default.urlencoded({ extended: true }));
     this.app.use(_express2.default.json());
     this.app.use('/images/', _express2.default.static(_path.resolve.call(void 0, __dirname, '..', 'uploads', 'images')));
