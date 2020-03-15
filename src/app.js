@@ -16,7 +16,7 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
-  'https://escolareactapp.netlify.com/',
+  'https://reactescola.gabrielmussolini.com.br/',
 ];
 
 const corsOption = {

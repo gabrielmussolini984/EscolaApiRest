@@ -16,7 +16,7 @@ var _alunoRoutes = require('./routes/alunoRoutes'); var _alunoRoutes2 = _interop
 var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopRequireDefault(_fotoRoutes);
 
 const whiteList = [
-  'https://escolareactapp.netlify.com/',
+  'https://reactescola.gabrielmussolini.com.br/',
 ];
 
 const corsOption = {
