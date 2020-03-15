@@ -17,6 +17,9 @@ import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
   'https://reactescola.gabrielmussolini.com.br',
+  'https://reactescola.gabrielmussolini.com.br/',
+  '34.95.201.84',
+  'http://34.95.201.84/',
 ];
 
 const corsOption = {
